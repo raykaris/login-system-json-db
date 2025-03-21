@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden">
+        <h2>Welcome, <span id="username-display"></span>!</h2>
+        <button onclick="logout()">Logout </button>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login-page">
+        <h2>Login</h2>
+        <div id="login-message" class="message hidden"></div>
+        <form id="login-form">
+            <div>
+                <label>Username:</label>
+                <input type="text" id="login-username" required>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <button onclick="showSignup()">Sign up here</button></p>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signup-page" class="hidden">
+        <h2>Sign Up</h2>
+        <div id="signup-message" class="message hidden"></div>
+        <form id="signup-form">
+            <div>
+                <label>Username:</label>
+                <input type="text" id="signup-username" required>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" id="signup-password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <button onclick="showLogin()">Login here</button></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
