@@ -26,6 +26,15 @@ form {
     gap: 10px;
 }
 button {
-    padding: 10px;
+    padding: 5px;
+    width: 90px;
+    border-radius: 8px;
     cursor: pointer;
+}
+#login-page{
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #333;
+    align-items: center;
 }
